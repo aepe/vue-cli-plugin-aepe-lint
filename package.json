@@ -1,0 +1,25 @@
+{
+  "name": "vue-cli-plugin-aepe-lint",
+  "version": "1.0.1",
+  "description": "vue-cli-plugin-aepe-lint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aepe/vue-cli-plugin-aepe-lint.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "aepe",
+    "bhabgs"
+  ],
+  "author": "bhabgs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aepe/vue-cli-plugin-aepe-lint/issues"
+  },
+  "homepage": "https://github.com/aepe/vue-cli-plugin-aepe-lint#readme"
+}
