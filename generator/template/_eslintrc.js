@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 10:12:53
  * @LastEditors  : bhabgs
- * @LastEditTime : 2020-01-02 11:07:46
+ * @LastEditTime : 2020-01-02 15:28:12
  */
 module.exports = {
     env: {
@@ -12,7 +12,7 @@ module.exports = {
         es6: true,
         node: true,
     },
-    extends: ['airbnb-base', 'plugin:prettier/recommended', 'eslint-plugin-vue'],
+    extends: ['airbnb-base', 'plugin:prettier/recommended', 'plugin:vue/recommended'],
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
