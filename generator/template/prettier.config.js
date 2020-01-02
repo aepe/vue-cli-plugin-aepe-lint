@@ -3,12 +3,12 @@
  * @version: 0.0.1
  * @Author: bhabgs
  * @Date: 2020-01-02 10:13:22
- * @LastEditors: bhabgs
- * @LastEditTime: 2020-01-02 10:23:51
+ * @LastEditors  : bhabgs
+ * @LastEditTime : 2020-01-02 16:42:23
  */
 module.exports = {
     printWidth: 100, // 文稿的最大宽度
-    tabWidth: 4, // 标签缩进的宽度
+    tabWidth: 2, // 标签缩进的宽度
     useTabs: false, // 是否使用制表符
     semi: true, // 是否在每个语句末尾添加分号
     singleQuote: true, // 是否使用单引号
