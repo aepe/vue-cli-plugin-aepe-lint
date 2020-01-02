@@ -25,6 +25,8 @@ package-lock.json
 *.svg
 *.ttf
 *.ico
+*.lock
+.browserslistrc
 
 # Editor directories and files
 .idea

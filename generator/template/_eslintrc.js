@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 10:12:53
  * @LastEditors  : bhabgs
- * @LastEditTime : 2020-01-02 15:28:12
+ * @LastEditTime : 2020-01-02 16:19:11
  */
 module.exports = {
     env: {
@@ -27,6 +27,14 @@ module.exports = {
         },
     },
     overrides: [
+        {
+            files: ['*.vue'],
+            // plugins: ['plugin:vue/recommended'],
+            parser: 'vue-eslint-parser',
+            parserOptions: {
+                parser: 'babel-eslint',
+            },
+        },
         {
             files: ['*.ts', '*.tsx'],
             plugins: ['@typescript-eslint'],
