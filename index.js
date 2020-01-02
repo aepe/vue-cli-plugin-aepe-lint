@@ -1,5 +1,5 @@
 const path = require("path");
-
+const { loadModule } = require("./util");
 module.exports = (api, options) => {
   if (options.lintOnSave) {
     const cwd = api.getCwd();
