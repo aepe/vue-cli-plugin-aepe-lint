@@ -3,7 +3,7 @@ name: 部署最新版本
 on:
   push:
     branches:
-      - release
+      - releases
 jobs:
   BUILDDOCS:
     runs-on: macOS-latest
