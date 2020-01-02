@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 09:34:41
  * @LastEditors  : bhabgs
- * @LastEditTime : 2020-01-02 11:08:22
+ * @LastEditTime : 2020-01-02 13:50:45
  */
 module.exports = (api, options, rootOptions) => {
   api.extendPackage({

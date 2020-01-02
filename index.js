@@ -1,8 +1,11 @@
 const path = require("path");
-const { loadModule } = require("./util");
+
 module.exports = (api, options) => {
   if (options.lintOnSave) {
+    const { loadModule, resolveModule } = require("@vue/cli-shared-utils");
+
     const cwd = api.getCwd();
+    // require("eslint/package.json");
     const eslintPkg =
       loadModule("eslint/package.json", cwd, true) ||
       loadModule("eslint/package.json", __dirname, true);
@@ -10,10 +13,11 @@ module.exports = (api, options) => {
     // eslint-loader doesn't bust cache when eslint config changes
     // so we have to manually generate a cache identifier that takes the config
     // into account.
+    const v = require("eslint-loader/package.json");
     const { cacheIdentifier } = api.genCacheConfig(
       "eslint-loader",
       {
-        "eslint-loader": require("eslint-loader/package.json").version,
+        "eslint-loader": v.version,
         eslint: eslintPkg.version
       },
       [
