@@ -1,0 +1,25 @@
+name: 部署最新版本
+
+on:
+  push:
+    branches:
+      - release
+jobs:
+  BUILDDOCS:
+    runs-on: macOS-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@master
+      - name: 初始化node环境
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+      - name: 发布最新版本至npm
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      run: |
+        npm publish
