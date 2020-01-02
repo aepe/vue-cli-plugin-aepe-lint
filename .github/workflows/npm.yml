@@ -21,5 +21,4 @@ jobs:
       - name: 发布最新版本至npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: |
-          npm publish
+        run: npm publish
