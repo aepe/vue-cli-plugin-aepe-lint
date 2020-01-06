@@ -16,6 +16,7 @@ package-lock.json
 .eslintignore
 .gitignore
 
+*.wasm
 *.txt
 *.png
 *.jpg
