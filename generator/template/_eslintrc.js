@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 10:12:53
  * @LastEditors  : bhabgs
- * @LastEditTime : 2020-01-02 16:44:26
+ * @LastEditTime : 2020-01-06 14:02:47
  */
 module.exports = {
   env: {
@@ -29,12 +29,13 @@ module.exports = {
   overrides: [
     {
       files: ['*.vue'],
-      // plugins: ['plugin:vue/recommended'],
       parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: 'babel-eslint',
+        parser: '@typescript-eslint/parser',
+        ecmaVersion: 8,
         ecmaFeatures: {
           legacyDecorators: true,
+          jsx: true,
         },
       },
     },
@@ -51,21 +52,17 @@ module.exports = {
         },
       },
       rules: {
-        '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-        '@typescript-eslint/explicit-function-return-type': 'error',
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/typedef': [
-          'error',
-          {
-            variableDeclaration: true,
-          },
-        ],
+        '@typescript-eslint/semi': ['error'],
+        '@typescript-eslint/indent': ['error', 2],
+        '@typescript-eslint/explicit-function-return-type': 0,
       },
     },
   ],
   rules: {
-    'prettier/prettier': 'error',
     'no-console': 'off',
     'array-callback-return': 'off',
+    'vue/singleline-html-element-content-newline': 0,
+    'prettier/prettier': 0,
+    'import/newline-after-import': 0,
   },
 };
