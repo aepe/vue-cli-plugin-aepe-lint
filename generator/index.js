@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 09:34:41
  * @LastEditors: bhabgs
- * @LastEditTime: 2020-03-20 14:07:23
+ * @LastEditTime: 2020-03-24 15:15:12
  */
 module.exports = (api, options, rootOptions) => {
   // prettier-ignore
@@ -21,6 +21,8 @@ module.exports = (api, options, rootOptions) => {
       "eslint-plugin-import": "^2.19.1",
       "@typescript-eslint/eslint-plugin": "^2.14.0",
       "@typescript-eslint/parser": "^2.14.0",
+      "@commitlint/cli": "^8.3.5",
+      "@commitlint/config-conventional": "^8.3.4",
       "commitizen": "^4.0.3",
       "commitlint-config-cz": "^0.13.1",
       "cz-conventional-changelog": "^3.1.0",
