@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 09:34:28
  * @LastEditors: bhabgs
- * @LastEditTime: 2020-03-20 15:07:39
+ * @LastEditTime: 2020-03-24 15:37:43
  -->
 
 # vue-cli-plugin-aepe-lint
@@ -38,5 +38,5 @@ yarn eslint:fix
 
 ```js
 yarn commit // git commit 操作请使用
-yarn gd// 代替git add .
+yarn gd// 代替git add .s
 ```

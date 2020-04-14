@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-aepe-lint",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "vue-cli-plugin-aepe-lint",
   "main": "index.js",
   "scripts": {
