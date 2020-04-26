@@ -27,7 +27,8 @@ module.exports = (api, options, rootOptions) => {
       "commitlint-config-cz": "^0.13.1",
       "cz-conventional-changelog": "^3.1.0",
       "cz-customizable": "^6.2.0",
-      "husky": "^4.2.3"
+      "husky": "^4.2.3",
+      "stats-webpack-plugin": "^0.7.0"
     }
   });
 
