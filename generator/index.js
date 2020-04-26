@@ -4,7 +4,7 @@
  * @Author: bhabgs
  * @Date: 2020-01-02 09:34:41
  * @LastEditors: bhabgs
- * @LastEditTime: 2020-03-24 15:15:12
+ * @LastEditTime: 2020-04-26 15:03:07
  */
 module.exports = (api, options, rootOptions) => {
   // prettier-ignore
@@ -13,6 +13,7 @@ module.exports = (api, options, rootOptions) => {
       "eslint": "^6.8.0",
       "prettier": "^1.19.1",
       "babel-eslint": "^10.0.3",
+      "filemanager-webpack-plugin": "^2.0.5",
       "vue-eslint-parser": "^7.0.0",
       "eslint-config-airbnb-base": "^14.0.0",
       "eslint-config-prettier": "^6.9.0",
